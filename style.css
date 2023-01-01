@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: rgb(29, 141, 161);
+    overflow: hidden;
+}
+head,title{
+    display: none;
+}
+script{
+    display: none;
+}
+.container{
+    position: absolute;
+    width:100%;
+    height: 100%;
+}
+#grass{
+    z-index: 0;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: -12px;
+}
+#naruto{
+    display: inline;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    bottom: 100px;
+    right:-240px;
+    background: none;
+    position: absolute;
+    animation: walk 9s linear 0s infinite normal;
+}
+@keyframes walk {
+ 0%{
+    right:-240px;
+ }   
+ 100%{
+    right:1200px;
+ }
+
+}
+.cloud{
+    z-index: 0;
+    background: none;
+    display: inline;
+left: -180px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+#cloud1{
+    top:0;
+    right: 0;
+    animation: move 9s linear 6s infinite normal;
+
+}
+#cloud2{
+    top:130px;
+    animation: move 9s linear 1s infinite normal;
+}
+#cloud3{
+    top:0px;
+    animation: move 9s linear 4s infinite normal;
+}
+#cloud4{
+    top:130px;
+    animation: move 9s linear 3s infinite normal;
+}
+#cloud5{
+    top:0px;
+    animation: move 9s linear 2s infinite normal;
+
+}
+#cloud6{
+    top:130px;
+    animation: move 9s linear 5s infinite normal;
+}
+#cloud7{
+    top:0;
+    animation: move 9s linear 0s infinite normal;
+    
+}
+#cloud8{
+    top: 130px;
+    animation: move 9s linear 7s infinite normal;
+}
+
+@keyframes move {
+    0%{
+        left:-180px;
+    }
+    100%{
+        left:1400px;
+    }
+}
